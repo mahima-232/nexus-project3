@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techy Software</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Techy Software</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#feedback">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="container-fluid p-5 text-white text-center">
+        <h1>Welcome to Techy Software</h1>
+        <p>Your solution for innovative software products</p>
+    </div>
+
+    <section id="about" class="container" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>Techy Software is a leading software company providing cutting-edge solutions to clients worldwide. With a focus on innovation and customer satisfaction, we strive to deliver top-notch software products that meet the evolving needs of businesses. Our team of experts specializes in various domains, ensuring that we can tackle any challenge and provide the best possible solutions.</p>
+        <p>Founded in 2010, Techy Software has grown from a small startup to a renowned player in the software industry. Our mission is to empower businesses with the tools they need to succeed in a fast-paced digital world. We believe in building long-term relationships with our clients by offering exceptional service and support.</p>
+        <p>We are committed to continuous improvement and staying ahead of the curve. Our research and development team is constantly exploring new technologies and methodologies to enhance our offerings. Whether you're a small business or a large enterprise, Techy Software is here to help you achieve your goals.</p>
+    </section>
+
+    <section id="products" class="container">
+        <h2 data-aos="fade-up">Our Products</h2>
+        <p data-aos="fade-up">Explore our range of innovative software products.</p>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-right">
+                <img src="images/product1.jpg" class="img-fluid" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Description of product 1.</p>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <img src="images/product2.jpg" class="img-fluid" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Description of product 2.</p>
+            </div>
+            <div class="col-md-4" data-aos="fade-left">
+                <img src="images/product3.jpg" class="img-fluid" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Description of product 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <section id="feedback" class="container" data-aos="fade-up">
+        <h2>Feedback</h2>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="feedbackName">Name:</label>
+                <input type="text" class="form-control" id="feedbackName" required>
+            </div>
+            <div class="form-group">
+                <label for="feedbackEmail">Email:</label>
+                <input type="email" class="form-control" id="feedbackEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="feedbackMessage">Message:</label>
+                <textarea class="form-control" id="feedbackMessage" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <section id="services" class="container" data-aos="fade-up">
+        <h2>Interested in Our Services?</h2>
+        <form id="servicesForm">
+            <div class="form-group">
+                <label for="servicesName">Name:</label>
+                <input type="text" class="form-control" id="servicesName" required>
+            </div>
+            <div class="form-group">
+                <label for="servicesEmail">Email:</label>
+                <input type="email" class="form-control" id="servicesEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="servicesInterest">What Services Are You Interested In?</label>
+                <textarea class="form-control" id="servicesInterest" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <footer class="text-center p-3">
+        <p>&copy; 2023 Techy Software | <a href="#">Privacy Policy</a></p>
+        <div>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> |
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> |
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+
+            document.querySelector('form#contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                database.ref('messages').push({
+                    name: name,
+                    email: email,
+                    message: message
+                });
+
+                alert('Thank you, ' + name + '! Your message has been sent.');
+                document.querySelector('form#contactForm').reset();
+            });
+
+            document.querySelector('form#feedbackForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const feedbackName = document.getElementById('feedbackName').value;
+                const feedbackEmail = document.getElementById('feedbackEmail').value;
+                const feedbackMessage = document.getElementById('feedbackMessage').value;
+
+                database.ref('feedback').push({
+                    name: feedbackName,
+                    email: feedbackEmail,
+                    message: feedbackMessage
+                });
+
+                alert('Thank you for your feedback, ' + feedbackName + '!');
+                document.querySelector('form#feedbackForm').reset();
+            });
+
+            document.querySelector('form#servicesForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const servicesName = document.getElementById('servicesName').value;
+                const servicesEmail = document.getElementById('servicesEmail').value;
+                const servicesInterest = document.getElementById('servicesInterest').value;
+
+                database.ref('services').push({
+                    name: servicesName,
+                    email: servicesEmail,
+                    interest: servicesInterest
+                });
+
+                alert('Thank you for your interest, ' + servicesName + '!');
+                document.querySelector('form#servicesForm').reset();
+            });
+        });
+    </script>
+</body>
+</html>

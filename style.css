@@ -1,0 +1,135 @@
+/* css/style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.navbar {
+    background-color: #f8f9fa !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #6e8efb;
+}
+
+#home {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 10rem 1rem;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s;
+}
+
+#home p {
+    font-size: 1.2rem;
+    animation: fadeInUp 1s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #a777e3;
+    margin: 0.5rem auto;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #6e8efb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #6e8efb;
+    border-color: #6e8efb;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #a777e3;
+    border-color: #a777e3;
+}
+
+#products .col-md-4 img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#products .col-md-4 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact form, #feedback form {
+    max-width: 600px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
